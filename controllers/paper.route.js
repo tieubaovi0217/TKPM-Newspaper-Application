@@ -188,7 +188,8 @@ router.get(
   authPremium,
   async function (req, res) {
     const paperId = +req.params.id || 0;
-    const browser = await puppeteer.launch();
+    const browser = await puppeteer.launch(
+    );
 
     const url = `/papers/details/${paperId}/premium`;
     const page = await browser.newPage();
