@@ -17,9 +17,9 @@
     alert("Username or email must not be empty!");
     return;
   }
-   const isValidUsername = await fetch(
+  const isValidUsername = await fetch(
     `/account/is-valid-username?username=${username}`,
-	{
+    {
       method: "GET",
     },
   ).then((res) => res.json());
@@ -139,15 +139,15 @@ $("#txtUsername").focus();
       <button type="submit" class="btn btn-success d-block w-100">
         Register
       </button>
-      <p class="text-center mt-2 text-muted">
-        Have already an account?
-        <a href="/account/login" class="font-weight-bold text-dark">
-          <u>
-            Login
-            here
-          </u>
-        </a>
-      </p>
     </form>
+    <p class="text-center mt-2 text-muted">
+      Have already an account?
+      <a href="/account/login" class="font-weight-bold text-dark">
+        <u>
+          Login
+            here
+        </u>
+      </a>
+    </p>
   </div>
 </div>
