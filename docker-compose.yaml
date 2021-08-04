@@ -10,7 +10,7 @@ services:
       - MYSQL_DATABASE=newspapers
     cap_add:
       - SYS_NICE # CAP_SYS_NICE
-    volumes: 
+    volumes:
       - data:/var/lib/mysql
   web:
     depends_on:
@@ -23,3 +23,4 @@ services:
       - imgs:/app/public/imgs
 volumes:
   data-volume:
+  data:
