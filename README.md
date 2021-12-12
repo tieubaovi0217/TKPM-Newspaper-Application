@@ -1,1 +1,1 @@
-# web-newpaper
+# Web Newspaper Application
